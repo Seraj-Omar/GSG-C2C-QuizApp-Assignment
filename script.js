@@ -162,17 +162,18 @@ class QuizManager {
     }
 
     showAnswers() {
-        this.questions.forEach(q => {
-            const inputs = document.getElementsByName(`q_${q.id}`);
-            inputs.forEach(input => {
-                this.renderer.disableinpututs(q.id);
-                if (q.isCorrect(input.value)) 
-                    this.renderer.highlightCorrect(input);
-                if (input.checked && !q.isCorrect(input.value)) 
-                    this.renderer.markIncorrect(input);
-            });
+    this.questions.forEach(q => {
+        const inputs = document.getElementsByName(`q_${q.id}`);
+        inputs.forEach(input => {
+            this.renderer.disableInputs(q.id);
+            if (q.isCorrect(input.value)) 
+                this.renderer.highlightCorrect(input);
+            if (input.checked && !q.isCorrect(input.value)) 
+                this.renderer.markIncorrect(input);
         });
-    }
+    });
+}
+
 
   reset() {
     this.state.reset();
