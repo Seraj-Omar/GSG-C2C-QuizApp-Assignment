@@ -79,4 +79,11 @@ input[type="radio"]{
 .fail{
     color:red;
 }
-
+.small{
+    font-size: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+#status-container {
+    display: none;
+}
