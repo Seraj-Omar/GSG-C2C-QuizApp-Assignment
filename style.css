@@ -59,7 +59,7 @@ label.choice{
     cursor: pointer;
 }
 input[type="radio"]{
-    mrgin:5px;
+    margin:5px;
 }
 .status{
     margin-top: 15px;
