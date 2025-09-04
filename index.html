@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quiz App</h1>
+            <div class="controls">
+                <button id="resetBtn">Reset</button>
+                <button id="submitBtn">Submit</button>
+            </div>
+        </header>
+
+        <main id="quiz-main" class="questions-grid"></main>
+
+        <div id="status-container">
+            <div>
+                <div id="score" class="result">Score: _ </div>
+                <div id="pass"> _ </div>
+            </div>
+            <div>
+                <button id="retryBtn">Try Again</button>
+            </div>
+        </div>
+        <footer>
+            <p class="small">Pass threshold: 70%. Answers persist during an active attempt. After submitting, a refresh starts fresh.</p>
+        </footer>
+    </div>
+</body>
+</html>
